@@ -1,0 +1,900 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API_BABWebApp</name>
+    </assembly>
+    <members>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyController.Get(Entities.Parameters.BeneficiaryFamilyParameters)">
+            <summary>
+            Gets the list of all BeneficiaryFamilies.
+            </summary>
+            <returns>The list of BeneficiaryFamilies.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyController.GetBeneficiaryFamilyById(System.Guid)">
+            <summary>
+            Gets a BeneficiaryFamily by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyController.GetPopulationByIdBeneficiaryFamily(System.Guid)">
+            <summary>
+            Gets the detailed information of the population that is part of the beneficiary's family by IdBeneficiaryFamily.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyController.GetMembersByIdBeneficiaryFamily(System.Guid)">
+            <summary>
+            Gets the list of the members of the beneficiary's family by IdBeneficiaryFamily.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyController.CreateBeneficiaryFamily(Entities.DTOs.BeneficiaryFamilyForCreationAndUpdateDTO)">
+            <summary>
+            Creates a BeneficiaryFamily.
+            </summary>
+            <param name="beneficiaryFamily"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyController.UpdateBeneficiaryFamily(System.Guid,Entities.DTOs.BeneficiaryFamilyForCreationAndUpdateDTO)">
+            <summary>
+            Updates a BeneficiaryFamily.
+            </summary>
+            <param name="id"></param> 
+            <param name="beneficiaryFamily"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyController.DeleteBeneficiaryFamily(System.Guid)">
+            <summary>
+            Deletes a BeneficiaryFamily.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyMemberController.Get">
+            <summary>
+            Gets the list of all BeneficiaryFamilyMembers.
+            </summary>
+            <returns>The list of BeneficiaryFamilyMembers.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyMemberController.GetBeneficiaryFamilyMemberById(System.Guid)">
+            <summary>
+            Gets a BeneficiaryFamilyMember by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyMemberController.CreateBeneficiaryFamilyMember(Entities.DTOs.BeneficiaryFamilyMemberForCreationDTO)">
+            <summary>
+            Creates a BeneficiaryFamilyMember.
+            </summary>
+            <param name="member"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyMemberController.UpdateBeneficiaryFamilyMember(System.Guid,Entities.DTOs.BeneficiaryFamilyMemberForCreationDTO)">
+            <summary>
+            Updates a BeneficiaryFamilyMember.
+            </summary>
+            <param name="id"></param> 
+            <param name="member"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryFamilyMemberController.DeleteBeneficiaryFamilyMember(System.Guid)">
+            <summary>
+            Deletes a BeneficiaryFamilyMember.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryOrganizationController.Get(Entities.Parameters.BeneficiaryOrganizationParameters)">
+            <summary>
+            Gets the list of all Beneficiary Organizations.
+            </summary>
+            <returns>The list of Beneficiary Organizations.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryOrganizationController.GetBeneficiaryOrganizationById(System.Guid)">
+            <summary>
+            Gets a BeneficiaryOrganization by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryOrganizationController.CreateBeneficiaryOrganization(Entities.DTOs.BeneficiaryOrganization.BeneficiaryOrganizationForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Beneficiary Organization.
+            </summary>
+            <param name="organization"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryOrganizationController.UpdateBeneficiaryOrganization(System.Guid,Entities.DTOs.BeneficiaryOrganization.BeneficiaryOrganizationForCreationAndUpdateDTO)">
+            <summary>
+            Updates a Beneficiary Organization.
+            </summary>
+            <param name="id"></param> 
+            <param name="organization"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.BeneficiaryOrganizationController.DeleteBeneficiaryOrganization(System.Guid)">
+            <summary>
+            Deletes a Beneficiary Organization.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ClockingController.Get(Entities.Parameters.ClockingParameters)">
+            <summary>
+            Gets the list of all Clockings.
+            </summary>
+            <returns>The list of Clockings.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ClockingController.GetClockingById(System.Guid)">
+            <summary>
+            Gets a Clocking info by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ClockingController.CreateClocking(Entities.DTOs.Clocking.ClockingForCreationDTO)">
+            <summary>
+            Creates a Clocking.
+            </summary>
+            <param name="clocking"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ClockingController.Clockout(System.Int32,Entities.DTOs.Clocking.ClockoutDTO)">
+            <summary>
+            Clocking out.
+            </summary>
+            <param name="idVolunteer"></param> 
+            <param name="clockout"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ClockingController.UpdateClocking(System.Guid,Entities.DTOs.Clocking.ClockingForUpdateDTO)">
+            <summary>
+            Updates a Clocking registry.
+            </summary>
+            <param name="id"></param> 
+            <param name="clocking"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ClockingController.DeleteClocking(System.Guid)">
+            <summary>
+            Deletes a Clocking.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.CompanyController.Get(Entities.Parameters.CompanyParameters)">
+            <summary>
+            Gets the list of all Companies suppliers.
+            </summary>
+            <returns>The list of Companies.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.CompanyController.GetCompanyById(System.Guid)">
+            <summary>
+            Gets a Company by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.CompanyController.CreateCompany(Entities.DTOs.CompanyForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Company.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/companies
+                {
+                    "CompanyComercialName": "PIL",
+                    "Address": "Av. Blanco Galindo Km 5",
+                    "BusinessName": "PIL ANDINA",
+                    "Representative": "Jorge Osorio",
+                    "RepresentativePosition": "Gerente de Ventas",
+                    "PhoneNumber": 69824156,
+                    "Email": "pilandina@gmail.com"
+                }
+            </remarks>
+            <param name="company"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.CompanyController.UpdateCompany(System.Guid,Entities.DTOs.CompanyForCreationAndUpdateDTO)">
+            <summary>
+            Updates a Company.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/companies/8a1919a7-9202-41ae-9eac-978ff992a589
+                {  
+                    "CompanyComercialName": "PIL",
+                    "Address": "Av. Blanco Galindo Km 10",
+                    "BusinessName": "PIL Andina S.A",
+                    "Representative": "Jorge Osorio",
+                    "RepresentativePosition": "Gerente de Ventas",
+                    "PhoneNumber": 69824122,
+                    "Email": "pilandina.s.a@gmail.com"
+                }
+            </remarks>
+            <param name="id"></param>
+            <param name="company"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.CompanyController.DeleteCompany(System.Guid)">
+            <summary>
+            Deletes a Company.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.DepartmentController.Get">
+            <summary>
+            Gets the list of all Departments.
+            </summary>
+            <returns>The list of Departments.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.DepartmentController.GetDepartmentById(System.Guid)">
+            <summary>
+            Gets a Department by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.DepartmentController.CreateDepartment(Entities.DTOs.DepartmentForCreationDTO)">
+            <summary>
+            Creates a Department.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/Department
+                {        
+                  "DepartmentName": "Logistica"    
+                }
+            </remarks>
+            <param name="department"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.DepartmentController.UpdateDepartment(System.Guid,Entities.DTOs.DepartmentForUpdateDTO)">
+            <summary>
+            Updates a Department.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/Department/17b7fc87-27da-471c-81a6-31c07bf2c80c
+                {        
+                  "DepartmentName": "Logistica"    
+                }
+            </remarks>
+            <param name="id"></param> 
+            <param name="department"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.DepartmentController.DeleteDepartment(System.Guid)">
+            <summary>
+            Deletes a Department.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EmergencyContactController.Get">
+            <summary>
+            Gets all EmergencyContacts.
+            </summary>
+            <returns>The list of EmergencyContacts.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EmergencyContactController.GetEmergencyContactByVolunteerId(System.Int32)">
+            <summary>
+            Gets an EmergencyContact by Id.
+            </summary>
+            <param name="idVolunteer"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EmergencyContactController.CreateEmergencyContact(Entities.DTOs.EmergencyContactForCreationDTO)">
+            <summary>
+            Creates an EmergencyContact.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/EmergencyContact
+                {        
+                  "IDVolunteer": 439110,
+                  "Name": "Andres",
+                  "LastName": "Ferrufino",
+                  "PhoneNumber": 65574593,
+                  "Relationship": 3
+                }
+            </remarks>
+            <param name="emergencyContact"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EmergencyContactController.UpdateEmergencyContact(System.Int32,Entities.DTOs.EmergencyContactForUpdateDTO)">
+            <summary>
+            Updates an EmergencyContact.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/EmergencyContact/8a1919a7-9202-41ae-9eac-978ff992a589
+                {        
+                  "IDVolunteer": 439700,
+                  "Name": "Andres",
+                  "LastName": "Ferrufino",
+                  "PhoneNumber": 67474593,
+                  "Relationship": 3
+                }
+            </remarks>
+            <param name="idVolunteer"></param>
+            <param name="emergencyContact"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EmergencyContactController.DeleteEmergencyContact(System.Int32)">
+            <summary>
+            Deletes an EmergencyContact.
+            </summary>
+            <param name="idVolunteer"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventController.Get(Entities.Parameters.EventParameters)">
+            <summary>
+            Gets the list of all Events.
+            </summary>
+            <returns>The list of Events.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventController.GetEventById(System.Guid)">
+            <summary>
+            Gets a Event by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventController.CreateEvent(Entities.DTOs.EventForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Event.
+            </summary>
+            <param name="eventToCreate"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventController.UpdateEvent(System.Guid,Entities.DTOs.EventForCreationAndUpdateDTO)">
+            <summary>
+            Updates a Event.
+            </summary>
+            <param name="id"></param> 
+            <param name="eventToUpdate"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventController.DeleteEvent(System.Guid)">
+            <summary>
+            Deletes a Event.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.Get">
+            <summary>
+            Gets the list of all EventVolunteers.
+            </summary>
+            <returns>The list of EventVolunteers.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.GetEventVolunteerById(System.Guid)">
+            <summary>
+            Gets an EventVolunteer by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.GetEventVolunteerByIDEventAndIDVolunteer(System.Guid,System.Int32)">
+            <summary>
+            Gets an EventVolunteer by IdEvent and IdVolunteer.
+            </summary>
+            <param name="idVolunteer"></param>  
+            <param name="idEvent"></param>   
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.GetEventsByIdVolunteer(System.Int32,Entities.Parameters.EventParameters)">
+            <summary>
+            Gets the list of all Events that a Volunteer is assigned to.
+            </summary>
+            <param name="idVolunteer"></param>  
+            <param name="eventParameters"></param>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.GetEventsByIdVolunteer(System.Int32,System.DateTime)">
+            <summary>
+            Gets the list of all Events that a Volunteer is assigned to.
+            </summary>
+            <param name="idVolunteer"></param>  
+            <param name="date"></param>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.GetVolunteersByIdEvent(System.Guid,Entities.Parameters.VolunteerParameters)">
+            <summary>
+            Gets the list of all Volunteers assigned to an Event.
+            </summary>
+            <param name="idEvent"></param>  
+            <param name="volunteerParameters"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.CreateEventVolunteer(Entities.DTOs.EventVolunteerForCreationAndUpdateDTO)">
+            <summary>
+            Assign a Volunteer to an Event.
+            </summary>
+            <param name="eventVolunteerToCreate"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.DeleteEventVolunteer(System.Guid)">
+            <summary>
+            Unassign a Volunteer from an Event by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.EventVolunteerController.DeleteEventVolunteerByIdEventAndIdVoolunteer(System.Guid,System.Int32)">
+            <summary>
+            Unassign a Volunteer from an Event by IDEvent and IDVolunteer.
+            </summary>
+            <param name="idVolunteer"></param>  
+            <param name="idEvent"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketController.Get">
+            <summary>
+            Gets the list of all Markets.
+            </summary>
+            <returns>The list of Markets.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketController.GetMarketById(System.Guid)">
+            <summary>
+            Gets a Market by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketController.CreateMarket(Entities.DTOs.MarketForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Market.
+            </summary>
+            <param name="market"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketController.UpdateMarket(System.Guid,Entities.DTOs.MarketForCreationAndUpdateDTO)">
+            <summary>
+            Updates a Market.
+            </summary>
+            <param name="id"></param> 
+            <param name="market"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketController.DeleteMarket(System.Guid)">
+            <summary>
+            Deletes a Market.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketSellerController.Get(Entities.Parameters.MarketSellerParameters)">
+            <summary>
+            Gets the list of all MarketSeller suppliers.
+            </summary>
+            <returns>The list of MarketSeller.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketSellerController.GetMarketSellerById(System.Guid)">
+            <summary>
+            Gets a MarketSeller by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketSellerController.CreateMarketSeller(Entities.DTOs.MarketSellerForCreationAndUpdateDTO)">
+            <summary>
+            Creates a MarketSeller.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/marketSellers
+                {
+                    "Name": "Juan Carlos",
+                    "LastName": "Terrazas Lopez",
+                    "MarketName": "Mercado Campesino",
+                    "PhoneNumber": 69741054,
+                    "IDProductCategory": "8a1919a7-9202-41ae-9eac-971sf992a589"
+                }
+            </remarks>
+            <param name="marketSeller"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketSellerController.UpdateMarketSeller(System.Guid,Entities.DTOs.MarketSellerForCreationAndUpdateDTO)">
+            <summary>
+            Updates a MarketSeller.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/marketSellers/8a1919a7-9202-41ae-9eac-978ff992a589
+                {  
+                    "Name": "Juan Carlos",
+                    "LastName": "Terrazas Lopez",
+                    "MarketName": "Mercado Calatayud",
+                    "PhoneNumber": 60041054,
+                    "IDProductCategory": "2a1919a7-9202-41ac-9eac-978ff992a501"
+                }
+            </remarks>
+            <param name="id"></param>
+            <param name="marketSeller"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.MarketSellerController.DeleteMarketSeller(System.Guid)">
+            <summary>
+            Deletes a MarketSeller.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonBeneficiaryFamilyController.GetAllPersonBeneficiaries(Entities.Parameters.BeneficiaryFamilyParameters)">
+            <summary>
+            Gets the list of all PersonBeneficiaryFamilies.
+            </summary>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonBeneficiaryFamilyController.GetPersonBeneficiaryFamilyById(System.Guid)">
+            <summary>
+            Gets a PersonBeneficiaryFamily by IDBeneficiary.
+            </summary>
+            <param name="idBeneficiary"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonBeneficiaryFamilyController.CreatePersonBeneficiaryFamily(Entities.DTOs.PersonBeneficiaryFamily.PersonBeneficiaryFamilyForCreationDTO)">
+            <summary>
+            Creates a new PersonBeneficiaryFamily.
+            </summary>
+            <param name="newPersonBeneficiaryFamily"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonBeneficiaryFamilyController.UpdatePersonBeneficiaryFamily(System.Guid,Entities.DTOs.PersonBeneficiaryFamily.PersonBeneficiaryFamilyForUpdateDTO)">
+            <summary>
+            Updates a PersonBeneficiaryFamily.
+            </summary>
+            <param name="idBeneficiary"></param>
+            <param name="updatedPersonBeneficiaryFamily"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonBeneficiaryFamilyController.DeletePersonBeneficiaryFamily(System.Guid)">
+            <summary>
+            Deletes a PersonBeneficiaryFamily.
+            </summary>
+            <param name="idBeneficiary"></param>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonController.Get">
+            <summary>
+            Gets the list of all People.
+            </summary>
+            <returns>The list of People.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonController.GetPersonById(System.Guid)">
+            <summary>
+            Gets a Person by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonController.CreatePerson(Entities.DTOs.PersonForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Person.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/Person
+                {        
+                  "IDUser": "15",
+                  "FirstName": "Juan",
+                  "MiddleName": "David",
+                  "FirstSurname": "Osorio",
+                  "SecondSurname": "Rojas",
+                  "DateOfBirth": "2004-03-08T00:00:00",
+                  "Address": "Calle Juan Capriles y Av. Libertador Bolivar",
+                  "City": "Cochabamba",
+                  "Email": "juan.david.or.47@gmail.com",
+                  "PhoneNumber": 67427045,
+                  "Occupation": "Estudiante",
+                  "CI": 7439540     
+                }
+            </remarks>
+            <param name="person"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonController.UpdatePerson(System.Guid,Entities.DTOs.PersonForCreationAndUpdateDTO)">
+            <summary>
+            Updates a Person.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/Person/8a1919a7-9202-41ae-9eac-978ff992a589
+                {  
+                  "IDUser": "15",
+                  "FirstName": "Juan",
+                  "MiddleName": "David",
+                  "FirstSurname": "Osorio",
+                  "SecondSurname": "Lopez",
+                  "DateOfBirth": "2004-03-08T00:00:00",
+                  "Address": "Av. America y Calle Potosi",
+                  "City": "Cochabamba",
+                  "Email": "juan.david.or.47@gmail.com",
+                  "PhoneNumber": 67421235,
+                  "Occupation": "Estudiante",
+                  "CI": 7447540     
+                }
+            </remarks>
+            <param name="id"></param>
+            <param name="person"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonController.DeletePerson(System.Guid)">
+            <summary>
+            Deletes a Person.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonVolunteerController.GetPersonVolunteerById(System.Guid)">
+            <summary>
+            Gets a PersonVolunteer by IdPerson.
+            </summary>
+            <param name="idPerson"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonVolunteerController.CreatePersonVolunteer(Entities.PersonVolunteerForCreationDTO)">
+            <summary>
+            Creates a new PersonVolunteer.
+            </summary>
+            <param name="newPersonVolunteer"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonVolunteerController.UpdatePersonVolunteer(System.Guid,Entities.DTOs.PersonVolunteerForUpdateDTO)">
+            <summary>
+            Updates a PersonVolunteer.
+            </summary>
+            <param name="idPerson"></param>
+            <param name="updatedPersonVolunteer"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.PersonVolunteerController.DeletePersonVolunteer(System.Guid)">
+            <summary>
+            Deletes a PersonVolunteer.
+            </summary>
+            <param name="idPerson"></param>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ProductCategoryController.Get">
+            <summary>
+            Gets the list of all ProductCategories.
+            </summary>
+            <returns>The list of ProductCategories.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ProductCategoryController.GetProductCategoryById(System.Guid)">
+            <summary>
+            Gets a ProductCategory by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ProductCategoryController.CreateProductCategory(Entities.DTOs.ProductCategoryForCreationAndUpdateDTO)">
+            <summary>
+            Creates a ProductCategory.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/productCategories
+                {        
+                  "ProductCategoryName": "Lácteos"   
+                }
+            </remarks>
+            <param name="productCategory"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ProductCategoryController.UpdateProductCategory(System.Guid,Entities.DTOs.ProductCategoryForCreationAndUpdateDTO)">
+            <summary>
+            Updates a ProductCategory.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/productCategories/17b7fc87-27da-471c-81a6-31c07bf2c80c
+                {        
+                  "ProductCategoryName": "Frutas y Vegetales"    
+                }
+            </remarks>
+            <param name="id"></param> 
+            <param name="productCategory"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.ProductCategoryController.DeleteProductCategory(System.Guid)">
+            <summary>
+            Deletes a ProductCategory.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TransportRequestController.Get(Entities.Parameters.TransportRequestParameters)">
+            <summary>
+            Gets all TransportRequests.
+            </summary>
+            <returns>The list of TransportRequests.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TransportRequestController.GetTransportRequestById(System.Guid)">
+            <summary>
+            Gets an TransportRequest by Id.
+            </summary>
+            <param name="id"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TransportRequestController.CreateTransportRequest(Entities.DTOs.TransportRequestForCreationAndUpdateDTO)">
+            <summary>
+            Creates a TransportRequest.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/transportRequest
+                {        
+                  "IDDepartment": "32de8aef-07a5-4055-b9fe-f6d633e9a75c",
+                  "IDCoordinator": 559744,
+                  "Place": "Aldea SOS",
+                  "TransportType ": 0,
+                  "TimeRange": "9:00 AM - 11:30 AM",
+                  "Details: "",
+                  "Observations": "Tocar el timbre de arriba", 
+                  "Priority": 1,
+                  "Status": 0,
+                  "CommentByDirector": "", 
+                }
+            </remarks>
+            <param name="transportRequest"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TransportRequestController.UpdateTransportRequest(System.Guid,Entities.DTOs.TransportRequestForCreationAndUpdateDTO)">
+            <summary>
+            Updates a TransportRequest.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/transportRequest/02de8awr-07a5-4115-b9op-e7b633e9a75c
+                {        
+                  "IDDepartment": "32de8aef-07a5-4055-b9fe-f6d633e9a75c",
+                  "IDCoordinator": 559744,
+                  "Place": "Hilando Sueños",
+                  "TransportType ": 0,
+                  "TimeRange": "8:00 AM - 10:30 AM",
+                  "Details: "",
+                  "Observations": "Tocar el timbre de arriba", 
+                  "Priority": 2,
+                  "Status": 0,
+                  "CommentByDirector": "", 
+                }
+            </remarks>
+            <param name="id"></param> 
+            <param name="transportRequest"></param>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TransportRequestController.ApproveTransportRequest(System.Guid)">
+            <param name="id"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TransportRequestController.RejectTransportRequest(System.Guid)">
+            <param name="id"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TransportRequestController.DeleteTransportRequest(System.Guid)">
+            <summary>
+            Deletes a TransportRequest.
+            </summary>
+            <param name="id"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TripController.Get(Entities.Parameters.TripParameters)">
+            <summary>
+            Gets the list of all Trips.
+            </summary>
+            <returns>The list of Trips.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TripController.GetTripById(System.Guid)">
+            <summary>
+            Gets a Trip by Id.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TripController.CreateTrip(Entities.DTOs.Trip.TripForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Trip.
+            </summary>
+            <param name="trip"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TripController.UpdateTrip(System.Guid,Entities.DTOs.Trip.TripForCreationAndUpdateDTO)">
+            <summary>
+            Updates a Trip.
+            </summary>
+            <param name="id"></param> 
+            <param name="trip"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.TripController.DeleteTrip(System.Guid)">
+            <summary>
+            Deletes a Trip.
+            </summary>
+            <param name="id"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.UserController.GetUserByEmail(System.String)">
+            <summary>
+            Gets a User by Email.
+            </summary>
+            <param name="email"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.UserController.CreateUser(Entities.DTOs.UserForCreationAndLoginDTO)">
+            <summary>
+            Creates a User.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/User
+                {        
+                  "email": "juanosorio1@gmail.com",
+                  "password": "test123"    
+                }
+            </remarks>
+            <param name="user"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.UserController.Login(Entities.DTOs.UserForCreationAndLoginDTO)">
+            <param name="user"></param>  
+        </member>
+        <member name="M:API_BABWebApp.Controllers.UserController.ChangeUserRole(System.String)">
+            <summary>
+            Changes the user role.
+            </summary>
+            <param name="email"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerAvailabilityController.Get">
+            <summary>
+            Gets all VolunteerAvailabilities.
+            </summary>
+            <returns>The list of VolunteerAvailabilities.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerAvailabilityController.GetAvailabilityByVolunteerId(System.Int32)">
+            <summary>
+            Gets a VolunteerAvailability by Id.
+            </summary>
+            <param name="idVolunteer"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerAvailabilityController.CreateVolunteerAvailability(Entities.DTOs.VolunteerAvailabilityForCreationDTO)">
+            <summary>
+            Creates a VolunteerAvailability.
+            </summary>
+            <param name="volunteerAvailability"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerAvailabilityController.UpdateVolunteerAvailability(System.Int32,Entities.DTOs.VolunteerAvailabilityForUpdateDTO)">
+            <summary>
+            Updates a VolunteerAvailability.
+            </summary>
+            <param name="idVolunteer"></param> 
+            <param name="volunteerAvailability"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerAvailabilityController.DeleteVolunteerAvailability(System.Int32)">
+            <summary>
+            Deletes a VolunteerAvailability.
+            </summary>
+            <param name="idVolunteer"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerController.Get(Entities.Parameters.VolunteerParameters)">
+            <summary>
+            Gets all Volunteers.
+            </summary>
+            <returns>The list of Volunteers.</returns>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerController.GetVolunteerById(System.Int32)">
+            <summary>
+            Gets an Volunteer by Id.
+            </summary>
+            <param name="id"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerController.GetVolunteerByPersonId(System.Guid)">
+            <summary>
+            Gets an Volunteer by Id.
+            </summary>
+            <param name="idPerson"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerController.GetVolunteerPersonById(System.Int32)">
+            <summary>
+            Gets an Volunteer by Id.
+            </summary>
+            <param name="id"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerController.CreateVolunteer(Entities.DTOs.VolunteerForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Volunteer.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/Volunteer
+                {        
+                  "IDPerson": "8a1919a7-9202-41ae-9eac-978ff992a589",
+                  "IDDepartment": "17b7fc87-27da-471c-81a6-31c07bf2c80c",
+                  "Category": 2,
+                  "Group": "Scouts",
+                  "IsVaccinated": true
+                }
+            </remarks>
+            <param name="volunteer"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerController.UpdateVolunteer(System.Int32,Entities.DTOs.VolunteerForCreationAndUpdateDTO)">
+            <summary>
+            Creates a Volunteer.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/Volunteer/439700
+                {        
+                  "IDDepartment": "17b7fc87-27da-471c-81a6-31c07bf2c80c",
+                  "Role": 2,
+                  "Category": 1,
+                  "Group": "Scouts",
+                  "IsVaccinated": false
+                }
+            </remarks>
+            <param name="id"></param> 
+            <param name="volunteer"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerController.DeleteVolunteer(System.Int32)">
+            <summary>
+            Deletes a Volunteer.
+            </summary>
+            <param name="id"></param> 
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerWorkStatisticsController.GetAllVoluntersWorkStatistics(Entities.Parameters.VolunteerWorkStatisticsParameters)">
+            <summary>
+            Gets all volunteer work statistics.
+            </summary>
+        </member>
+        <member name="M:API_BABWebApp.Controllers.VolunteerWorkStatisticsController.GetVolunterWorkStatisticsByIdVolunteer(System.Int32)">
+            <summary>
+            Gets volunteer work statistics by IdVolunteer.
+            </summary>
+            <param name="idVolunteer"></param>  
+        </member>
+    </members>
+</doc>
