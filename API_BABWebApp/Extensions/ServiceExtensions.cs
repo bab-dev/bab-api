@@ -29,7 +29,7 @@ namespace API_BABWebApp.Extensions
             services.AddCors(options =>
             {
                 options.AddPolicy(name: "CorsPolicy",
-                    policy => policy.WithOrigins("http://localhost:3000")
+                    policy => policy.WithOrigins("https://gentle-tree-05305200f.3.azurestaticapps.net")
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .WithExposedHeaders("X-Pagination"));
