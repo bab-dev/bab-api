@@ -126,7 +126,7 @@ namespace API_BABWebApp.Extensions
                     {
                         ValidateIssuer = true, // on production make it true
                         ValidateAudience = true, // on production make it true
-                        ValidateLifetime = true,
+                        ValidateLifetime = false,
                         ValidateIssuerSigningKey = true,
                         ValidIssuer = validIssuer,
                         ValidAudience = validAudience,
