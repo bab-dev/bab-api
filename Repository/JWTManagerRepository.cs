@@ -28,7 +28,7 @@ namespace Repository
 			try
 			{
 				var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-				var expireDate = DateTime.Now.AddMinutes(5);
+				var expireDate = DateTime.Now.AddMinutes(10);
 				var tokenOptions = new JwtSecurityToken(
 					issuer: _configuration["ValidIssuer"],
 					audience: _configuration["ValidAudience"],
